@@ -3,88 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mémoire de cours personnel, organisé par thèmes et chapitres.">
-  <title>Mon mémoire de cours</title>
+  <meta name="description" content="Le mémoire de cours de Mathéo.">
+  <title>Mon mémoire | Mathéo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-content">
-      <a class="logo" href="#accueil" aria-label="Retour à l'accueil">Mon mémoire</a>
-      <nav aria-label="Navigation principale">
+    <div class="header-inner">
+      <a class="brand" href="#accueil">mon mémoire</a>
+      <nav aria-label="Menu principal">
         <a href="#cours">Cours</a>
-        <a href="#ressources">Ressources</a>
         <a href="#a-propos">À propos</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="accueil" class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Espace d'apprentissage</p>
-        <h1>Mon mémoire de cours</h1>
-        <p class="hero-text">Un espace simple pour rassembler, structurer et retrouver mes notes au fil de mon apprentissage.</p>
-        <a class="button" href="#cours">Explorer les cours</a>
-      </div>
+  <main id="accueil" class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="kicker">Mémoire de Mathéo</p>
+      <h1 id="page-title">Cours et notions essentielles</h1>
+      <p class="intro-text">Un espace simple pour retrouver rapidement mes cours d'informatique.</p>
     </section>
 
-    <section id="cours" class="section container">
+    <section id="cours" class="chapters" aria-labelledby="chapters-title">
       <div class="section-heading">
-        <p class="eyebrow">Contenu</p>
-        <h2>Mes cours</h2>
-        <p>Remplace ces exemples par tes matières, chapitres et fiches de révision.</p>
+        <h2 id="chapters-title">Sommaire</h2>
       </div>
-
-      <div class="course-grid">
-        <article class="course-card">
-          <span class="card-number">01</span>
-          <h3>Introduction</h3>
-          <p>Présente ici les notions fondamentales et les objectifs du cours.</p>
-          <a href="#">Voir le chapitre <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="course-card">
-          <span class="card-number">02</span>
-          <h3>Notions essentielles</h3>
-          <p>Ajoute les définitions, méthodes et exemples à retenir.</p>
-          <a href="#">Voir le chapitre <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="course-card">
-          <span class="card-number">03</span>
-          <h3>Révisions</h3>
-          <p>Regroupe les synthèses, questions fréquentes et exercices.</p>
-          <a href="#">Voir le chapitre <span aria-hidden="true">→</span></a>
-        </article>
+      <div class="chapter-list">
+        <a class="chapter" href="recursivite.html"><span>01</span><strong>Récursivité</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="graphes.html"><span>02</span><strong>Graphes</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="arbres.html"><span>03</span><strong>Arbres</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="piles-et-files.html"><span>04</span><strong>Piles et files</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="sql.html"><span>05</span><strong>SQL</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="bases.html"><span>06</span><strong>Les bases</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="dictionnaires-python.html"><span>07</span><strong>Dictionnaires en Python</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="classes-python.html"><span>08</span><strong>Classes en Python</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="architecture-materielle.html"><span>09</span><strong>Architecture matérielle</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="systeme-exploitation.html"><span>10</span><strong>Système d'exploitation</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="reseau.html"><span>11</span><strong>Réseau</strong><em>À venir</em><b aria-hidden="true">→</b></a>
+        <a class="chapter" href="paradigmes-programmation.html"><span>12</span><strong>Paradigmes de programmation</strong><em>À venir</em><b aria-hidden="true">→</b></a>
       </div>
     </section>
 
-    <section id="ressources" class="section section-alt">
-      <div class="container resource-layout">
-        <div>
-          <p class="eyebrow">À garder sous la main</p>
-          <h2>Ressources utiles</h2>
-        </div>
-        <ul class="resource-list">
-          <li><a href="#">Bibliographie et liens externes</a><span>↗</span></li>
-          <li><a href="#">Fiches de vocabulaire</a><span>↗</span></li>
-          <li><a href="#">Calendrier des révisions</a><span>↗</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="a-propos" class="section container about">
-      <p class="eyebrow">mon projet</p>
-      <h2>Un site qui évolue avec mes cours</h2>
-      <p>Cette page servira de point de départ. Je pourrai y ajouter de nouvelles matières, des pages dédiées et des ressources au fur et à mesure.</p>
+    <section id="a-propos" class="about" aria-labelledby="about-title">
+      <h2 id="about-title">À propos</h2>
+      <p>Ce mémoire évoluera au fil des cours. Chaque chapitre pourra accueillir les définitions, méthodes et exemples importants.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>© 2026 Mon mémoire de cours</p>
-      <p>Publié avec GitHub Pages</p>
-
-    </div>
-  </footer>
+  <footer class="site-footer"><p>© 2026 · Mon mémoire</p></footer>
 </body>
 </html>
