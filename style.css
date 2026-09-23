@@ -38,11 +38,6 @@ a {
   backdrop-filter: blur(10px);
 }
 
-.header-inner,
-.site-footer {
-  width: min(calc(100% - 3rem), var(--max-width));
-}
-
 .header-inner {
   width: 100%;
   display: flex;
@@ -54,8 +49,6 @@ a {
 }
 
 .page-shell {
-  width: 100%;
-  margin: 0;
   min-height: calc(100vh - 64px);
 }
 
@@ -208,9 +201,7 @@ h1 {
 
 .about {
   width: min(calc(100% - 3rem), 430px);
-  max-width: 430px;
   margin: 3rem 0 0 20rem;
-  margin-right: auto;
   padding: 0 0 2rem;
   border-top: none;
   text-align: left;
@@ -244,8 +235,10 @@ h1 {
 }
 
 .course-page {
+  width: min(calc(100% - 3rem), var(--max-width));
+  margin: 0 auto;
   min-height: calc(100vh - 130px);
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 
 .back-link {
@@ -272,14 +265,43 @@ h1 {
   padding: 1rem 1.2rem;
   color: var(--muted);
   background: var(--accent-soft);
+  border-radius: 10px;
 }
 
 
 @media (max-width: 620px) {
-  .header-inner,
-  .page-shell,
+  .header-inner {
+    padding: 0 1rem;
+  }
+
+  nav {
+    gap: 0;
+  }
+
+  nav a {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.75rem;
+  }
+
   .site-footer {
     width: min(calc(100% - 2rem), var(--max-width));
+  }
+
+  .course-page {
+    width: calc(100% - 2rem);
+    padding: 2rem 0 3rem;
+  }
+
+  .back-link {
+    margin-bottom: 3rem;
+  }
+
+  .course-page h1 {
+    margin-bottom: 1rem;
+  }
+
+  .course-status {
+    padding: 0.85rem 1rem;
   }
 
   .intro {
